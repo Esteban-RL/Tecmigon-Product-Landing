@@ -1,0 +1,114 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecmigon</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta>
+  </head>
+
+  <body>
+        <header id="header" class="inicio">
+					<div class="logo">
+          <img 
+            id="header-img"
+            src="https://tecmigon.com/wp-content/uploads/2020/02/logo.png"        
+            alt="freecodecamp logo"
+            loading="lazy"
+            class="hero-img"
+          />
+					</div>
+					<nav id="nav-bar">
+						<ul>
+            	<li><a href="#header" class="nav-link">Inicio</a></li>
+          		<li><a href="#video" id="nav-link" class="nav-link">Video</a></li>
+							<li><a href="#form" class="nav-link">Formulario</a></li>
+						</ul>
+        	</nav>
+        </header>
+				<main>
+					<div>
+					<section id="section">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yRFhoBxyUqc?si=vTIPF5cBzC-jUrMi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+					</section>
+					</div>
+					<h1>NUESTRA EMPRESA</h1>
+<section class="text">
+					<p>Ubicada en la ciudad de Córdoba con el propósito de abastecer el mercado de ciudad y sus alrededores.
+En la corta trayectoria los desafíos se fueron sumando, generando nuevos puntos de ventas haciendo
+una expansión a nuevos clientes y avanzando en el mercado de córdoba.</p>
+
+<p>La empresa tiene como objetivo principal la mejora continua de los procesos de gestión interna, la plena satisfacción del cliente y asegurar la calidad de nuestro producto y servicio.</p>
+
+<p>Tecmigon hoy se encuentra en plena implementación de un sistema de gestión basados en la norma IRAM 1666- ISO 9001</p>
+</section>
+					<fieldset>
+						<h2>Pedido de Cotización:</h2>
+					<form id="form" class="form" method="post" name="form" action="https://www.freecodecamp.com/email-submit">
+						<div>
+							<label for="resistencia-label" class="resistencia-label">Resistencia</label>
+						</div>
+						<div>		
+							<select name="resistencia" id="resistencia" class="resistencia" required="required">
+									<option value="-">-</option>
+									<option value="H-8">H-8</option>
+									<option value="H-10">H-10</option>
+									<option value="H-13">H-13</option>
+									<option value="H-15">H-15</option>
+									<option value="H-17">H-17</option>
+									<option value="H-20">H-20</option>
+									<option value="H-21">H-21</option>
+									<option value="H-25">H-25</option>
+									<option value="H-30">H-30</option>
+									<option value="H-35">H-35</option>
+									<option value="Alivianado">Alivianado</option>
+							</select>
+						</div>
+						<div>
+							<label for="colado-label" class="colado-label">Colado</label>
+						</div>
+						<div>
+						<div>
+							<input type="checkbox" value="bombeable" id="bombeable" name="colado" class="check"> 
+							<label for="bombeable">Bombeable</label>
+						</div>
+							<input type="checkbox" value="descarga directa" id="desc-direct" name="colado" class="check"> 
+							<label for="desc-direct">Descarga directa</label>
+						</div>
+						<div>
+							<label for="email">Email</label>
+						</div>
+						<div>
+							<input type="email" name="email" id="email" class="email" placeholder="Email" required="required" >
+							<span class="error-message" id="email-error"></span>
+						</div>
+						<div>
+							<label for="telefono" class="telefono">Teléfono</label>
+						</div>
+						<div>
+							<input type="telefono" name="telefono" id="telefono" class="telefono" placeholder="Teléfono" required="required" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+						</div>
+						<div>
+							<label for="comentarios" class="comentarios">Comentarios</label>
+						</div>
+						<div>
+							<textarea class="comentario-text" name="comentario-text" id="comentario-text" rows="4" cols="20" placeholder="Comentarios"></textarea>				
+						</div>
+						<div>
+							<input id="submit" type="submit" value="Enviar" class="btn" />
+					</form>
+					</fieldset>
+				</main>
+				<footer>
+				</footer>
+  </body>
+</html>  
